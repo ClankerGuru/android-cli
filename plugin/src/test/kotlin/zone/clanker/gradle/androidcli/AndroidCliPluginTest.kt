@@ -45,9 +45,8 @@ class AndroidCliPluginTest :
         }
 
         given("AndroidCli.SettingsExtension") {
-            val ext = AndroidCli.SettingsExtension()
-
             `when`("created with defaults") {
+                val ext = AndroidCli.SettingsExtension()
                 then("binary defaults to android") {
                     ext.binary shouldBe "android"
                 }
@@ -57,6 +56,7 @@ class AndroidCliPluginTest :
             }
 
             `when`("properties are set") {
+                val ext = AndroidCli.SettingsExtension()
                 then("binary is mutable") {
                     ext.binary = "/opt/android/bin/android"
                     ext.binary shouldBe "/opt/android/bin/android"

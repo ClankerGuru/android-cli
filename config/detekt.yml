@@ -103,7 +103,7 @@ style:
       - 'TODO:'
       - 'FIXME:'
       - 'HACK:'
-    allowedPatterns: 'TODO\\(.*\\):'
+    allowedPatterns: 'TODO\(.*\):'
   MagicNumber:
     active: true
     ignoreNumbers:
